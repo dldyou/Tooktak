@@ -1,0 +1,74 @@
+html, body, .app, #root{
+    height: 100%;
+  }
+
+.card {
+    background-color: #ffffff; /* White background for contrast */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.card-header {
+    background-color: #276749; /* Deep green background for the header */
+    color: #ffffff; /* White text for clarity */
+    font-weight: bold; /* Bold font for header title */
+}
+
+.card-content {
+    background-color: #ffffff; /* White background for content to maintain readability */
+    padding: 20px; /* Adequate padding for spacing */
+}
+
+.input, .dropdown {
+    border: 1px solid #dbdbdb; /* Light grey border for inputs and dropdowns */
+}
+
+.dropdown-content {
+    background-color: #f0f0f0; /* Light grey for dropdown content background */
+    color: #276749; /* Text color to match the deep green theme */
+}
+
+.dropdown-item:hover {
+    background-color: #1e4d2b; /* Darker shade of deep green for hover state in dropdowns */
+    color: #ffffff; /* White text for contrast on hover */
+}
+
+
+.label {
+    color: #276749; /* Deep green for labels to integrate the theme */
+}
+
+/* Additional focus and active styles for form elements */
+.input:focus, .dropdown:focus, .button.is-focused, .button.is-active {
+    border-color: #276749;
+    box-shadow: 0 0 0 0.125em rgba(39, 103, 73, 0.25);
+}
+.card-header-title {
+    background-color: #dcffeb;
+    color: #ffffff;
+    border-radius: 10px;
+}
+
+
+.card-content .box {
+    margin-bottom: 10px;
+    padding: 10px;
+}
+/* Ensures the hero section takes full height and becomes a flex container */
+.hero.is-fullheight {
+    justify-content: center; /* Centers children horizontally */
+}
+
+/* Prevents sections from filling up the entire hero container */
+.section.is-small {
+    width: auto;  /* Allows the section to grow only as needed */
+    max-width: 100%; /* Restricts it to the hero's width */
+}
+.has-background-grey-light{
+}
+.table__wrapper {
+    overflow-x: auto;
+    display: flex;
+}
+.table__wrapper th, .table__wrapper td {
+    white-space: nowrap;  /* Ensures text stays on one line */
+}
